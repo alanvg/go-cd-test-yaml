@@ -1,0 +1,11 @@
+mypipe:
+  materials:
+    mygit:
+      git: https://github.com/alanvg/GoCD-workshop-application.git
+  stages:
+    - build:
+        jobs:
+          build:
+            tasks:
+             - exec:
+                 command: make
